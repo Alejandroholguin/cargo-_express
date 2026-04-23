@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="style.css"><title>Dashboard Admin</title></head>
+<body>
+    <nav><h1>Panel de Control</h1><button onclick="logout()">Salir</button></nav>
+    <div class="card">
+        <h3>Crear Envío</h3>
+        <input type="text" id="cName" placeholder="Cliente">
+        <input type="number" id="cWeight" placeholder="Peso (lbs)">
+        <button onclick="createShipment()">Guardar</button>
+    </div>
+    <div class="card">
+        <h3>Envíos Reales</h3>
+        <table id="table" style="width:100%"></table>
+    </div>
+    <script src="app.js"></script>
+    <script>if(!localStorage.getItem('token')) window.location.href='index.html';</script>
+</body>
+</html>
