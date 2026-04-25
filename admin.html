@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin | Cargo Express</title>
+  style.css
+</head>
+<body>
+
+<h1>Panel Admin — Cargo Express</h1>
+<p>index.html← Volver</a></p>
+
+<section>
+  <h2>Acceso</h2>
+  <button id="btnMe">Ver mi usuario</button>
+  <button id="btnStats">Cargar Stats</button>
+  <pre id="out"></pre>
+</section>
+
+<section>
+  <h2>Usuarios</h2>
+  <h3>Crear usuario</h3>
+  <div class="row">
+    <input id="newName" placeholder="Nombre"/>
+    <input id="newEmail" placeholder="Email"/>
+  </div>
+  <div class="row">
+    <input id="newPass" type="password" placeholder="Password"/>
+    <select id="newRole">
+      <option value="client">client</option>
+      <option value="admin">admin</option>
+    </select>
+  </div>
+  <button id="btnCreateUser">Crear usuario</button>
+  <p id="usersMsg"></p>
+
+  <button id="btnUsers">Recargar usuarios</button>
+  <div id="users"></div>
+</section>
+
+<section>
+  <h2>Tarifas</h2>
+  <button id="btnTariffs">Cargar tarifas</button>
+  <p id="tariffsMsg"></p>
+  <div id="tariffs"></div>
+
+  <hr style="margin:18px 0;"/>
+
+  <h3>Reset a valores por defecto</h3>
+  <label style="display:flex;gap:8px;align-items:center;margin:10px 0;">
+    <input type="checkbox" id="confirmReset" />
+    Confirmo que quiero resetear
+  </label>
+  <button id="btnResetTariffs">Resetear tarifas</button>
+</section>
+
+<section>
+  <h2>Tracking (Shipments)</h2>
+  <button id="btnShipments">Listar envíos</button>
+  <div id="shipments"></div>
+
+  <h3>Crear/Actualizar tracking</h3>
+  <input id="trk" placeholder="Tracking number"/>
+  <input id="trkStatus" placeholder="Estado"/>
+  <input id="trkLoc" placeholder="Ubicación"/>
+  <button id="btnUpsertShipment">Guardar</button>
+</section>
+
+<section>
+  <h2>Leads</h2>
+  <button id="btnLeads">Listar leads</button>
+  <pre id="leads"></pre>
+</section>
+
+<section>
+  <h2>Uploads</h2>
+  <button id="btnUploads">Listar uploads</button>
+  <pre id="uploads"></pre>
+</section>
+
+admin.jsscript>
+</body>
+</html>

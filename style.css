@@ -1,7 +1,8 @@
-:root { --navy: #1a2a6c; --gold: #f2a900; }
-body { font-family: sans-serif; margin: 0; background: #f4f7f6; }
-nav { background: var(--navy); color: white; padding: 1rem; display: flex; justify-content: space-between; }
-.card { background: white; padding: 20px; border-radius: 8px; margin: 20px auto; max-width: 600px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-button { background: var(--gold); border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
-input, select { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
-.whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; text-decoration: none; }
+body{font-family:Arial, sans-serif;max-width:980px;margin:24px auto;padding:0 12px;}
+section{border:1px solid #ddd;border-radius:12px;padding:14px;margin:14px 0;}
+input,select,button{padding:10px;margin:6px 0;width:100%;box-sizing:border-box;}
+button{cursor:pointer}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+small{color:#666}
+.bad{color:crimson}
+.good{color:green}

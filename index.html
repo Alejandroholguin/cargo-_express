@@ -1,15 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head><link rel="stylesheet" href="style.css"><title>Cargo Express</title></head>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cargo Express NYC → RD</title>
+  style.css
+</head>
 <body>
-    <nav><h1>Cargo Express NY → RD</h1><a href="dashboard.html" style="color:white">Admin</a></nav>
-    <div class="card">
-        <h3>Rastrear Paquete</h3>
-        <input type="text" id="trackId" placeholder="CE-XXXXXX">
-        <button onclick="track()">Buscar</button>
-        <p id="res"></p>
+
+<h1>Cargo Express (New York → República Dominicana)</h1>
+
+<section>
+  <h2>Login / Registro</h2>
+  <div class="row">
+    <div>
+      <input id="authEmail" placeholder="Email"/>
+      <input id="authPass" type="password" placeholder="Password"/>
     </div>
-    <a href="https://wa.me/18091234567?text=Hola%20Cargo%20Express" class="whatsapp-btn">💬 WhatsApp</a>
-    <script src="app.js"></script>
+    <div>
+      <button onclick="login()">Login</button>
+      <button onclick="register()">Crear cuenta</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <p id="authMsg"></p>
+  <p>admin.htmlIr al Panel Admin</a></p>
+</section>
+
+<section>
+  <h2>Cotizar</h2>
+  <select id="qDest">
+    <option>Santo Domingo</option>
+    <option>Santiago</option>
+    <option>Punta Cana</option>
+  </select>
+  <input id="qWeight" type="number" placeholder="Peso (lb)"/>
+  <select id="qMode">
+    <option value="air">Aéreo</option>
+    <option value="sea">Marítimo</option>
+  </select>
+  <button onclick="getQuote()">Calcular</button>
+  <p id="quoteMsg"></p>
+</section>
+
+<section>
+  <h2>Tracking</h2>
+  <input id="trk" placeholder="Número de guía"/>
+  <button onclick="track()">Rastrear</button>
+  <pre id="trkOut"></pre>
+</section>
+
+<section>
+  <h2>Subir imagen</h2>
+  <input id="img" type="file" accept="image/*"/>
+  <button onclick="uploadImage()">Subir</button>
+  <p id="upMsg"></p>
+</section>
+
+app.jsscript>
 </body>
 </html>
